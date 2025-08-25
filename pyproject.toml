@@ -18,7 +18,7 @@ select = [
     "SIM", # flake8-simplify
     "I",   # isort
 ]
-ignore = ["E501"]
+ignore = ["E501", "E741"]
 # https://github.com/timothycrosley/isort/
 [tool.ruff.lint.isort]
 combine-as-imports = true
