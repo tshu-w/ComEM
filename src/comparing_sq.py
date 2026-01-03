@@ -130,7 +130,7 @@ Record B: {{ cpair[1] }}
             ]
         elif mode == "bubble":
             for i in range(topK):
-                for j in range(n - i - 1, 0, -1):
+                for j in range(n - 1, i, -1):
                     greater = self.cmp(
                         instance={
                             "anchor": instance["anchor"],
