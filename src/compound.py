@@ -25,6 +25,7 @@ class ComEM:
     ):
         self.ranking_model_name = ranking_model_name
         self.selecting_model_name = selecting_model_name
+        self.ranking_strategy = ranking_strategy
         if self.ranking_strategy == "matching":
             self.ranker = MatchingSQ(model_name=ranking_model_name)
         elif self.ranking_strategy == "comparing":
